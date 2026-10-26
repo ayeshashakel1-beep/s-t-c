@@ -2,3 +2,9 @@
 [build]
   command = "bun run build"
   publish = "dist"
+
+[[redirects]]
+  from = "/api/session-log"
+  to = "/.netlify/functions/session-log"
+  status = 200
+  force = true
