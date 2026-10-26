@@ -1,4 +1,12 @@
-[[redirects]]
-  from = "/api/session-log"
-  to = "/.netlify/functions/session-log"
-  status = 200
+exports.handler = async function (event) {
+  return {
+    statusCode: 200,
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify({
+      success: true,
+      message: "Aptech Session Log Function Working"
+    })
+  };
+};
